@@ -519,40 +519,40 @@ add("rfq-checklist-fr.html", "fr", "rfq-checklist-en.html", "Liste de préparati
 
 # ---------- Privacy ----------
 PRIV_EN = """<section><div class="wrap narrow prose">
-<p class="note">Last updated: [DATE]</p>
+<p class="note">Last updated: October 20, 2026</p>
 <h2>Person responsible for personal information</h2>
-<p>[Full name], [title], BAS Digital Solutions. Contact: <a href="mailto:info@basdigitalsolutions.ca">info@basdigitalsolutions.ca</a>.</p>
+<p>Bandar Sharkh, Founder, BAS Digital Solutions. Contact: <a href="mailto:info@basdigitalsolutions.ca">info@basdigitalsolutions.ca</a>.</p>
 <h2>What we collect</h2>
 <p>When you submit the inquiry form or email us, we collect your name, contact details, company and the project description you provide. Do not send passwords, payment details or confidential drawings through the public form.</p>
 <h2>Why we use it</h2>
 <p>To review and answer your request, discuss fit and scope, and send a proposal. We do not sell personal information.</p>
 <h2>Service providers and storage</h2>
-<p>We use Tally for the inquiry form; Tally reports that it stores data in Europe. We use [Google Workspace / other tools] to manage inquiries; storage region: [to confirm]. Information may therefore be stored outside Quebec.</p>
+<p>We use these providers: Tally for the inquiry form (Tally reports storage in Europe); Web Hosting Canada for our email (Canada); GitHub Pages to host this website (United States), which keeps basic technical logs such as IP addresses for security; and Google tools to keep track of inquiries (data may be stored in the United States or elsewhere). Your information may therefore be stored outside Quebec.</p>
 <h2>Retention</h2>
-<p>We keep inquiry information for [period, e.g. 24 months], unless a longer period is agreed for an active project, then delete or anonymize it.</p>
+<p>We keep inquiry information for 24 months after our last contact with you, unless you become a client or a longer period is agreed for an active project. We then delete or anonymize it.</p>
 <h2>Your rights</h2>
 <p>You may ask to access or correct your information, ask that it be deleted, or withdraw your consent, by emailing <a href="mailto:info@basdigitalsolutions.ca">info@basdigitalsolutions.ca</a>. You may also contact the <a href="https://www.cai.gouv.qc.ca/" rel="noopener">Commission d'accès à l'information</a>.</p>
 <h2>Cookies and analytics</h2>
-<p>[Describe the analytics or tracking tools used, or state that none are used.] The embedded Tally form may set its own cookies.</p>
+<p>This website does not use analytics or advertising cookies. The embedded Tally form may set its own cookies when you use it.</p>
 <h2>Project data</h2>
 <p>Before you share drawings or other project data, we agree in writing on who may access it, which providers are used, where it is stored and how long it is kept.</p>
 </div></section>"""
 PRIV_FR = f"""<section><div class="wrap narrow prose">
-<p class="note">Dernière mise à jour{NB}: [DATE]</p>
+<p class="note">Dernière mise à jour{NB}: 20 octobre 2026</p>
 <h2>Personne responsable de la protection des renseignements personnels</h2>
-<p>[Nom complet], [titre], BAS Digital Solutions. Contact{NB}: <a href="mailto:info@basdigitalsolutions.ca">info@basdigitalsolutions.ca</a>.</p>
+<p>Bandar Sharkh, fondateur, BAS Digital Solutions. Contact{NB}: <a href="mailto:info@basdigitalsolutions.ca">info@basdigitalsolutions.ca</a>.</p>
 <h2>Renseignements recueillis</h2>
 <p>Lorsque vous remplissez le formulaire ou nous écrivez, nous recueillons votre nom, vos coordonnées, votre entreprise et la description de projet que vous fournissez. N'envoyez pas de mots de passe, de renseignements de paiement ni de dessins confidentiels par le formulaire public.</p>
 <h2>Utilisation</h2>
 <p>Pour examiner votre demande et y répondre, discuter de la pertinence et de la portée, et vous envoyer une proposition. Nous ne vendons pas de renseignements personnels.</p>
 <h2>Fournisseurs et stockage</h2>
-<p>Nous utilisons Tally pour le formulaire; Tally indique stocker les données en Europe. Nous utilisons [Google Workspace / autres outils] pour gérer les demandes; région de stockage{NB}: [à confirmer]. Les renseignements peuvent donc être stockés à l'extérieur du Québec.</p>
+<p>Nous faisons appel aux fournisseurs suivants{NB}: Tally pour le formulaire (Tally indique un stockage en Europe); Hébergement Web Canada pour notre courriel (Canada); GitHub Pages pour l'hébergement de ce site (États-Unis), qui conserve des journaux techniques de base, comme les adresses IP, à des fins de sécurité; et des outils Google pour le suivi des demandes (les données peuvent être stockées aux États-Unis ou ailleurs). Vos renseignements peuvent donc être stockés à l'extérieur du Québec.</p>
 <h2>Conservation</h2>
-<p>Nous conservons les renseignements des demandes pendant [durée, p. ex. 24 mois], sauf si une durée plus longue est convenue pour un projet actif, puis nous les détruisons ou les anonymisons.</p>
+<p>Nous conservons les renseignements des demandes pendant 24 mois après notre dernier contact avec vous, sauf si vous devenez client ou si une durée plus longue est convenue pour un projet actif. Nous les détruisons ou les anonymisons ensuite.</p>
 <h2>Vos droits</h2>
 <p>Vous pouvez demander l'accès à vos renseignements, leur rectification ou leur suppression, ou retirer votre consentement, en écrivant à <a href="mailto:info@basdigitalsolutions.ca">info@basdigitalsolutions.ca</a>. Vous pouvez aussi communiquer avec la <a href="https://www.cai.gouv.qc.ca/" rel="noopener">Commission d'accès à l'information</a>.</p>
 <h2>Témoins et analytique</h2>
-<p>[Décrire les outils d'analytique ou de suivi utilisés, ou indiquer qu'aucun n'est utilisé.] Le formulaire Tally intégré peut déposer ses propres témoins.</p>
+<p>Ce site n'utilise aucun témoin d'analytique ni de publicité. Le formulaire Tally intégré peut déposer ses propres témoins lorsque vous l'utilisez.</p>
 <h2>Données de projet</h2>
 <p>Avant que vous partagiez des dessins ou d'autres données de projet, nous convenons par écrit des personnes autorisées, des fournisseurs, du lieu de stockage et de la durée de conservation.</p>
 </div></section>"""
