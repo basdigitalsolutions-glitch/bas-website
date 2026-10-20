@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://basdigitalsolutions.ca/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/fr.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/fr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/fr.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/rfq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/rfq.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/rfq-fr.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/rfq-fr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/rfq.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/rfq-fr.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/dynamics365.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/dynamics365.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/dynamics365-fr.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/dynamics365-fr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/dynamics365.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/dynamics365-fr.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/customer-support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/customer-support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/service-client.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/service-client.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/customer-support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/service-client.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/rfq-intake.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/rfq-intake.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/reception-demandes-prix.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/reception-demandes-prix.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/rfq-intake.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/reception-demandes-prix.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/law25-ai.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/law25-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/loi25-ia.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/loi25-ia.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/law25-ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/loi25-ia.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/quebec-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/quebec-en.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/quebec.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/quebec.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/quebec-en.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/quebec.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/rfq-checklist-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/rfq-checklist-en.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/rfq-checklist-fr.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/rfq-checklist-fr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/rfq-checklist-en.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/rfq-checklist-fr.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/confidentialite.html"/>
+  </url>
+  <url>
+    <loc>https://basdigitalsolutions.ca/confidentialite.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/confidentialite.html"/>
+  </url>
+</urlset>
