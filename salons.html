@@ -1,85 +1,55 @@
-<!DOCTYPE html>
-<html lang="fr-CA">
+<!doctype html>
+<html lang="en-CA">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Site Web et assistant 24/7 pour salons et spas | Ouest-de-l'Île | Solutions numériques BAS</title>
-<meta name="description" content="Site Web bilingue, assistant en ligne qui répond 24 h sur 24 et fiche Google à jour pour les salons et spas de l'Ouest-de-l'Île. Audit gratuit.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salon AI Assistant | 30 Days Free, Then $49/Month | BAS Digital Solutions</title><meta name="description" content="Bilingual website chat for West Island salons, spas and barbers. Answer questions and collect appointment requests. Your team confirms. 30 days free, then $49/month.">
 <link rel="canonical" href="https://basdigitalsolutions.ca/salons.html">
-<link rel="alternate" hreflang="fr" href="https://basdigitalsolutions.ca/salons.html">
-<link rel="alternate" hreflang="en" href="https://basdigitalsolutions.ca/salons-en.html">
-<meta name="theme-color" content="#173a31">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Solutions numériques BAS">
-<meta property="og:url" content="https://basdigitalsolutions.ca/salons.html">
-<meta property="og:title" content="Site Web et assistant 24/7 pour salons et spas | Ouest-de-l'Île | Solutions numériques BAS">
-<meta property="og:description" content="Site Web bilingue, assistant en ligne qui répond 24 h sur 24 et fiche Google à jour pour les salons et spas de l'Ouest-de-l'Île. Audit gratuit.">
-<meta property="og:image" content="https://basdigitalsolutions.ca/og-image.png">
-<link rel="stylesheet" href="styles.css">
+<link rel="alternate" hreflang="en-CA" href="https://basdigitalsolutions.ca/salons.html">
+<link rel="alternate" hreflang="fr-CA" href="https://basdigitalsolutions.ca/salons-fr.html">
+<meta property="og:title" content="Salon AI Assistant | 30 Days Free, Then $49/Month | BAS Digital Solutions"><meta property="og:description" content="Bilingual website chat for West Island salons, spas and barbers. Answer questions and collect appointment requests. Your team confirms. 30 days free, then $49/month.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://basdigitalsolutions.ca/salons.html">
+<meta property="og:image" content="https://basdigitalsolutions.ca/media/bas-logo.png">
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/agency.css"><link rel="stylesheet" href="/experience.css"><link rel="stylesheet" href="/industrial.css"><link rel="stylesheet" href="/assistant.css">
 <style>
-.steps.three{grid-template-columns:repeat(3,1fr)}
-@media (max-width:760px){.steps.three{grid-template-columns:1fr}}
-.chat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;max-width:520px;margin-top:28px;display:flex;flex-direction:column;gap:10px}
-.chat .me{align-self:flex-end;background:var(--brand);color:var(--on-brand);border-radius:14px 14px 4px 14px;padding:10px 14px;max-width:85%}
-.chat .bot{align-self:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:14px 14px 14px 4px;padding:10px 14px;max-width:90%}
-.offer{background:var(--surface);border-left:6px solid var(--accent);padding:22px 24px;max-width:760px}
+/* Salon-only layout. Existing brand styles load first. */
+.salon-page .salon-hero{display:block;max-width:900px;padding-top:56px;padding-bottom:48px}
+.salon-page h1{font-size:clamp(36px,7vw,66px);max-width:850px}
+.salon-page .intro{max-width:720px}
+.salon-page .salon-section{padding-top:44px;padding-bottom:44px;scroll-margin-top:100px}
+.salon-page .salon-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:0;list-style:none}
+.salon-page .salon-card{padding:24px;border:1px solid #d7dfd5;border-radius:12px;background:#fff}
+.salon-page .salon-card h3{margin-top:0}
+.salon-page .salon-price{background:#173a31;color:#fff;padding:32px;border-radius:16px}
+.salon-page .salon-price h2{color:inherit}
+.salon-page .salon-price p{font-size:clamp(20px,3vw,27px);max-width:760px}
+.salon-page .salon-included li{margin-bottom:12px}
+.salon-page .salon-faq details{padding:20px 0;border-bottom:1px solid #d7dfd5}
+.salon-page .salon-faq summary{cursor:pointer;font-weight:650;min-height:44px;line-height:1.5;letter-spacing:normal}
+.salon-page .salon-faq p{max-width:760px}
+.salon-page .btn{min-height:48px;text-align:center;white-space:normal}
+.salon-page .salon-demo{border:1px solid #d7dfd5;border-radius:16px;padding:28px;background:#fff}
+.salon-page .salon-contact{overflow-wrap:anywhere}
+.salon-page :focus-visible{outline:3px solid #628730;outline-offset:4px}
+@media(max-width:760px){.salon-page .wrap{padding-left:20px;padding-right:20px}.salon-page .salon-grid{grid-template-columns:1fr}.salon-page .actions{gap:12px}.salon-page main .actions .btn{width:100%}.salon-page .salon-price,.salon-page .salon-demo{padding:24px}.salon-page .salon-hero{padding-top:32px}.salon-page .salon-section{padding-top:28px;padding-bottom:28px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
-<body>
-<a class="skip" href="#main">Aller au contenu</a>
-<header class="site"><div class="wrap bar">
-<a class="logo" href="index.html" aria-label="Solutions numériques BAS"><svg class="mark" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><rect width="96" height="96" rx="20" fill="#173a31"/><g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".85"><path d="M22 28 C40 28 40 48 56 48"/><path d="M22 48 H56"/><path d="M22 68 C40 68 40 48 56 48"/></g><path d="M56 48 H64" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="73" cy="48" r="12" fill="#e0954a"/><path d="M67.5 48.5 L71.5 52.5 L79 44" fill="none" stroke="#173a31" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Solutions numériques <b>BAS</b></span></a>
-<nav class="wide" aria-label="Principal" style="display:flex"><a href="#services">Services</a><a href="#demo">Démo</a><a href="#contact">Contact</a><a class="lang" href="salons-en.html" lang="en" hreflang="en">English</a></nav>
-</div></header>
+<body class="salon-page"><a class="skip" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation" class="wrap"><a class="brand" href="/"><img alt="BAS Digital Solutions" height="76" src="/media/bas-logo.png" width="76"/></a><div class="language-switch"><a href="/salons.html" lang="en" aria-current="page">EN</a> / <a href="/salons-fr.html" lang="fr">FR</a></div><button aria-controls="site-links" aria-expanded="false" class="nav-toggle" type="button">Menu</button><div class="links" id="site-links"><a href="/salons.html" aria-current="page">Salon assistant</a><a class="assistant-nav" href="/customer-support.html">AI Business Assistant</a><details class="subnav"><summary>Services</summary><div class="menu"><a href="/rfq.html">Industrial RFQ automation</a><a href="/dynamics365.html">Dynamics 365</a></div></details><a href="/rfq.html#pilot">Industrial RFQ pilot</a><a href="/#resources">Guides</a><a class="btn" href="https://tally.so/r/rDybZX">Try it free for 30 days</a></div></nav></header>
 <main id="main">
-<section class="hero"><div class="wrap">
-<p class="note" style="text-transform:uppercase;letter-spacing:.08em;font-weight:600">Salons et spas · Ouest-de-l'Île</p>
-<h1>Ne manquez plus aucun rendez-vous.</h1>
-<p class="lede">Un site Web bilingue et un assistant en ligne qui répond à vos clientes 24 h sur 24 : prix, heures, services et demandes de rendez-vous, même quand le salon est fermé.</p>
-<p><a class="btn" href="#contact">Demander mon audit gratuit</a> <a class="btn alt" href="https://salon-assistant-gje5.onrender.com/demo/lumiere" target="_blank" rel="noopener">Essayer l'assistant</a></p>
-<div class="chat" aria-label="Exemple de conversation">
-<p class="note" style="margin:0">Vraie réponse de notre assistant de démonstration</p>
-<div class="me">C'est combien pour une manucure gel ?</div>
-<div class="bot">Une manucure gel coûte 45 $ et dure environ 45 minutes. Souhaitez-vous prendre rendez-vous ?</div>
-</div>
-</div></section>
-<section id="services" class="band"><div class="wrap">
-<h2>Ce qu'on fait pour votre salon</h2>
-<div class="grid">
-<div class="card"><h3>Site Web bilingue</h3><p>En français et en anglais, beau sur cellulaire, avec vos services, vos prix et une politique de confidentialité conforme à la Loi 25.</p></div>
-<div class="card"><h3>Assistant 24 h sur 24</h3><p>Répond aux questions en français ou en anglais à partir de vos vraies informations, et vous envoie chaque demande de rendez-vous par courriel. C'est vous qui confirmez.</p></div>
-<div class="card"><h3>Fiche Google à jour</h3><p>Les mêmes heures, le même numéro et la même adresse partout en ligne, pour que les nouvelles clientes vous trouvent et vous joignent.</p></div>
-</div>
-</div></section>
-<section id="how"><div class="wrap">
-<h2>Comment ça marche</h2>
-<ol class="steps three"><li><span class="n">1</span><b>Audit gratuit</b>On regarde votre site et votre fiche Google, et on vous dit quoi corriger.</li><li><span class="n">2</span><b>Vous approuvez</b>On prépare tout avec vos prix et vos heures. Rien n'est en ligne sans votre accord.</li><li><span class="n">3</span><b>En ligne en une semaine</b>Environ. Et on reste là pour les mises à jour.</li></ol>
-<p class="trust">Service en français et en anglais. Entreprise locale de l'Ouest-de-l'Île. L'assistant ne confirme jamais un rendez-vous à votre place.</p>
-</div></section>
-<section id="demo" class="band"><div class="wrap">
-<h2>Essayez-le maintenant</h2>
-<p>Posez une question à notre salon de démonstration, Salon Lumière, en français ou en anglais : prix, heures, ou une demande de rendez-vous.</p>
-<p><a class="btn" href="https://salon-assistant-gje5.onrender.com/demo/lumiere" target="_blank" rel="noopener">Ouvrir la démo</a></p>
-<p class="note">Salon fictif et prix d'exemple. La première réponse peut prendre jusqu'à une minute.</p>
-</div></section>
-<section id="offer"><div class="wrap">
-<div class="offer"><h2 style="margin-top:0">Offre de lancement</h2><p style="margin-bottom:0">Premier mois de l'assistant offert pour les 3 premiers salons.</p></div>
-</div></section>
-<section id="contact" class="band"><div class="wrap">
-<h2>Demandez votre audit gratuit</h2>
-<p>Écrivez-nous le nom de votre salon et, si vous en avez un, l'adresse de votre site. On vous répond avec ce qu'on corrigerait, sans engagement.</p>
-<p><a class="btn" href="mailto:info@basdigitalsolutions.ca?subject=Audit%20gratuit%20-%20salon">Écrire à Solutions numériques BAS</a></p>
-<p>Ou écrivez directement à : <strong>info@basdigitalsolutions.ca</strong></p>
-<p class="note">Le bouton ouvre votre application de courriel. Aucun formulaire, aucune donnée enregistrée sur cette page.</p>
-</div></section>
+<section class="hero wrap salon-hero"><div class="eyebrow">For West Island salons, spas and barbers</div><h1>Your salon answers clients 24/7, even when you’re busy.</h1><p class="intro">A bilingual assistant on your website answers questions about prices, hours and services, and collects appointment requests. Your team confirms every appointment.</p><div class="actions"><a class="btn" href="https://tally.so/r/rDybZX">Try it free for 30 days</a><a class="btn light" href="https://salon-assistant-gje5.onrender.com/demo/lumiere">See the live demo</a></div><p class="note">For hair salons, spas, nail studios, lash and brow studios, and barbers. Kirkland, Pointe-Claire, Pierrefonds, DDO, Beaconsfield, Île-Perrot and Vaudreuil-Dorion.</p></section>
+<section class="wrap salon-section" id="live-demo"><div class="salon-demo"><h2>Try the salon assistant</h2><p>Salon Lumière is a fictional demo salon. Its services, prices and hours are sample information, not a real business offer. Please use fictional details when testing.</p><div class="actions"><a class="btn light" href="https://salon-assistant-gje5.onrender.com/demo/lumiere">See the live demo</a></div><p class="note">First reply can take a few seconds.</p></div></section>
+<section class="wrap salon-section"><h2>Your hands are full. Client questions keep coming.</h2><ul class="salon-grid"><li class="salon-card"><h3>During a colour appointment</h3><p>You miss a call while working with a client.</p></li><li class="salon-card"><h3>After closing</h3><p>Evening and Sunday messages wait for an answer.</p></li><li class="salon-card"><h3>Before booking</h3><p>A client leaves because they cannot find your prices.</p></li></ul></section>
+<section class="wrap salon-section" id="how-it-works"><h2>How it works</h2><ol class="salon-grid"><li class="salon-card"><h3>1. You approve the information</h3><p>I set up the assistant with your prices, hours and services. You review and approve everything.</p></li><li class="salon-card"><h3>2. I add it to your website</h3><p>I install the chat on your current website.</p></li><li class="salon-card"><h3>3. Your team confirms</h3><p>Clients ask questions and send appointment requests. You confirm each appointment.</p></li></ol></section>
+<section class="wrap salon-section" id="pricing"><div class="salon-price"><h2>One clear price</h2><p>Free for the first 30 days, then $49/month. No setup fee. Cancel anytime.</p><div class="actions"><a class="btn light" href="https://tally.so/r/rDybZX">Try it free for 30 days</a></div></div></section>
+<section class="wrap salon-section"><h2>What’s included</h2><ul class="salon-included"><li>Bilingual English and French chat on your website.</li><li>Answers from your approved information only. It never invents prices.</li><li>Appointment requests sent to you by email.</li><li>Setup handled by me.</li></ul></section>
+<section class="wrap salon-section salon-faq" id="faq"><h2>Your questions, answered</h2><details><summary>Does it book appointments by itself?</summary><p>No. It collects appointment requests and emails them to you. Your team confirms every appointment.</p></details><details><summary>What if it doesn’t know an answer?</summary><p>It gives the client your salon’s phone number so they can contact your team.</p></details><details><summary>Does it work on my current website?</summary><p>Yes. Wix, WordPress, Squarespace and other websites that allow custom scripts use one line of code. I handle setup. Any platform permissions or plan restrictions are checked before installation.</p></details><details><summary>Is it Law 25 compliant?</summary><p>Conversations are processed to generate replies. We help you add a line to your privacy policy explaining this use. This alone does not establish Law 25 compliance. Before launch, we review the personal information collected, service providers, retention and your salon’s responsibilities with you.</p></details><details><summary>Can I cancel?</summary><p>Yes, anytime.</p></details></section>
+<section class="wrap salon-section salon-contact" id="contact"><h2>Give clients a way to reach you after hours.</h2><p>Start with your approved information. Keep every appointment decision with your team.</p><div class="actions"><a class="btn" href="https://tally.so/r/rDybZX">Start your free 30-day trial</a></div><p>Prefer email? <a href="mailto:info@basdigitalsolutions.ca">info@basdigitalsolutions.ca</a></p></section>
+<section class="privacy wrap" id="privacy"><details><summary>Privacy &amp; personal information</summary><p>The demo chat on this page is processed by Anthropic's Claude to generate replies. Please use fictional details when testing.</p><p>When you submit an inquiry, Tally collects the answers you enter: your name and contact details, optional company information, service and project details, language preference, and consent to contact you about the inquiry. BAS uses this information to review your request, reply, and manage follow-up.</p><p>BAS uses ChatGPT to assist with reviewing inquiries and Google Sheets to keep relevant inquiry and follow-up records. A scheduled inquiry monitor is configured to check Tally submissions and Gmail for notifications and replies. BAS’s public business email address is info@basdigitalsolutions.ca. These services process inquiry information for these tasks; this notice does not promise storage in Quebec or a fixed deletion period.</p><p>To ask what information BAS holds about you, request access or correction, ask for deletion, or ask BAS to stop follow-up, email <a href="mailto:info@basdigitalsolutions.ca?subject=Privacy%20request">info@basdigitalsolutions.ca</a> with the subject “Privacy request.” Describe your request without sending identity documents or confidential files. BAS will review your request and explain the next steps and any retention limits.</p><p>Use the public form for an initial description only. Do not upload or paste confidential RFQs, drawings, passwords, or payment details. Agree on sample content and a suitable sharing method with BAS before sending files.</p></details></section>
 </main>
-<footer class="site"><div class="wrap">
-<div class="fcols">
-<div><p class="flogo"><svg class="mark" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><rect width="96" height="96" rx="20" fill="#173a31"/><g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".85"><path d="M22 28 C40 28 40 48 56 48"/><path d="M22 48 H56"/><path d="M22 68 C40 68 40 48 56 48"/></g><path d="M56 48 H64" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="73" cy="48" r="12" fill="#e0954a"/><path d="M67.5 48.5 L71.5 52.5 L79 44" fill="none" stroke="#173a31" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Solutions numériques BAS</b></p><p class="note" style="margin-top:-8px">(BAS Digital Solutions)</p><p>Sites Web et assistants en ligne pour salons et spas. Ouest-de-l'Île de Montréal.</p><p><a href="mailto:info@basdigitalsolutions.ca">info@basdigitalsolutions.ca</a></p></div>
-</div>
-<p class="note">Vos coordonnées servent uniquement à répondre à votre demande.</p>
-<p class="note">© 2026 Solutions numériques BAS · <a class="lang" href="salons-en.html" lang="en" hreflang="en">English</a> · <a href="index.html">Accueil</a></p>
-</div></footer>
-</body>
-</html>
+<footer><div class="wrap"><span>BAS Digital Solutions · AI customer service and workflow automation</span><a href="#privacy">Privacy</a></div></footer>
+<script defer src="/experience.js"></script>
+<!-- Fictional Salon Lumière demo. Enable this domain in the widget service before launch. -->
+<script src="https://salon-assistant-gje5.onrender.com/widget.js" data-salon="lumiere" data-lang="en" defer></script>
+</body></html>
