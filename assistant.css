@@ -6,7 +6,7 @@
 .assistant-feature h3{margin:8px 0}
 .assistant-feature .actions{align-items:stretch;flex-direction:column;margin:0}
 .assistant-feature .btn{text-align:center}
-.assistant-emphasis{font-size:19px;font-weight:750;background:#e8f1dc;border-left:5px solid #73924d;padding:20px 24px;border-radius:4px}
+.assistant-emphasis{font-size:19px;font-weight:750;background:#e8f1dc;border:1px solid #c5d9b0;padding:20px 24px;border-radius:12px}
 .salon-area{background:#e9eee3;border-block:1px solid #d7dfd5}
 .sample-conversation{max-width:860px;margin:32px auto;display:flex;flex-direction:column;gap:14px}
 .bubble{border-radius:16px;padding:16px 22px;max-width:79%;border:1px solid #c8d7c7;background:#fffef9}
@@ -31,4 +31,4 @@
 @media(max-width:540px){.assistant-feature{padding:20px}.bubble{max-width:92%;padding:13px 16px}.assistant-video video{border-radius:8px}.assistant-nav{font-size:14px}}
 
 /* Distinct service paths and industrial pilot guidance. */
-.audience-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.audience-grid .card{display:flex;flex-direction:column}.audience-grid .btn{margin-top:auto;text-align:center}.industrial-offer{border-top:1px solid #b8c7b6}.industrial-offer>.eyebrow{margin-bottom:14px}.sample-guidance,.inquiry-route{background:#f1f4eb;border-left:4px solid #73924d;padding:20px 24px;margin:28px 0;border-radius:6px}.sample-guidance h3{margin-top:0}.inquiry-route p:last-child,.sample-guidance p:last-child{margin-bottom:0}#rfq-audit{scroll-margin-top:35px}.service-paths{padding-top:35px;padding-bottom:55px}@media(max-width:850px){.audience-grid{grid-template-columns:1fr}.sample-guidance,.inquiry-route{padding:18px 20px}.links{gap:12px}}
+.audience-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.audience-grid .card{display:flex;flex-direction:column}.audience-grid .btn{margin-top:auto;text-align:center}.industrial-offer{border-top:1px solid #b8c7b6}.industrial-offer>.eyebrow{margin-bottom:14px}.sample-guidance,.inquiry-route{background:#f1f4eb;border:1px solid #cfdcc8;padding:20px 24px;margin:28px 0;border-radius:12px}.sample-guidance h3{margin-top:0}.inquiry-route p:last-child,.sample-guidance p:last-child{margin-bottom:0}#rfq-audit{scroll-margin-top:35px}.service-paths{padding-top:35px;padding-bottom:55px}@media(max-width:850px){.audience-grid{grid-template-columns:1fr}.sample-guidance,.inquiry-route{padding:18px 20px}.links{gap:12px}}
