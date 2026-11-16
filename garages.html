@@ -62,6 +62,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-f
 @media(min-width:760px){.tabbody{grid-template-columns:1fr 1fr;padding:32px}}
 /* demo */
 #live-demo{background:var(--bg)}
+.demo-video{max-width:720px;margin:24px auto 8px}.demo-video .note{text-align:center;color:var(--slate);font-size:14px;margin-top:10px}
 .presets{display:flex;justify-content:center;gap:8px;margin:26px 0 8px;flex-wrap:wrap}
 .presets .tab{font-size:14px}
 .prompt{text-align:center;color:var(--slate);font-style:italic;margin-bottom:16px;font-size:15px}
@@ -295,7 +296,11 @@ details[open] p{animation:fadeUp .4s both}
 </div></section>
 
 <section id="live-demo"><div class="wrap">
-  <h2 data-en="See it work in 30 seconds" data-fr="Voyez-le en action en 30 secondes">See it work in 30 seconds</h2>
+  <h2 data-en="See it work in one minute" data-fr="Voyez-le en action en une minute">See it work in one minute</h2>
+  <div class="demo-video" id="demo-video">
+    <video id="dv" controls playsinline preload="none" poster="/media/demo-salon-lumiere.jpg" data-label-en="Silent demo video" data-label-fr="Vidéo de démonstration sans son" aria-label="Silent demo video" style="width:100%;height:auto;border-radius:16px;background:#0f2420"><source id="dv-src" src="/media/demo-salon-lumiere.mp4" type="video/mp4"></video>
+    <p class="note" id="dv-note"></p>
+  </div>
   <div class="presets">
     <button class="tab on" id="p-salon" onclick="setPreset('salon')" data-en="✂️ Salon & Spa Demo" data-fr="✂️ Démo Salon & Spa">✂️ Salon & Spa Demo</button>
     <button class="tab" id="p-auto" onclick="setPreset('auto')" data-en="🔧 Auto & Tire Garage Demo" data-fr="🔧 Démo Garage & Pneus">🔧 Auto & Tire Garage Demo</button>
@@ -455,15 +460,27 @@ var P = {
    {k:["hour","open","heure","ouvert","horaire","saturday","samedi"],en:"Mon–Fri 8am–5pm, Sat 8am–1pm. Closed Sunday.",fr:"Du lundi au vendredi de 8 h à 17 h, le samedi de 8 h à 13 h. Fermé le dimanche."}]}
 };
 var preset="salon", bookState=0, book={};
+var DV={salon:{src:"/media/demo-salon-lumiere.mp4",poster:"/media/demo-salon-lumiere.jpg",
+ en:"Silent demo with a fictional salon: at 11:42 PM a customer asks what a balayage costs, and the assistant answers in French, then English.",
+ fr:"Démo sans son avec un salon fictif : à 23 h 42, une cliente demande le prix d’un balayage et l’assistant répond en français, puis en anglais."},
+ auto:{src:"/media/demo-garage-pro-pneu.mp4",poster:"/media/demo-garage-pro-pneu.jpg",
+ en:"Silent demo with a fictional garage: at 8:47 PM a customer asks about winter tires, and the assistant answers in French, then English.",
+ fr:"Démo sans son avec un garage fictif : à 20 h 47, un client demande le prix des pneus d’hiver et l’assistant répond en français, puis en anglais."}};
+function renderDemoVideo(){
+  var d=DV[preset], v=$("#dv"), s=$("#dv-src");
+  if(s.getAttribute("src")!==d.src){v.pause(); s.setAttribute("src",d.src); v.setAttribute("poster",d.poster); v.load();}
+  $("#dv-note").textContent=d[lang];
+  v.setAttribute("aria-label", lang==="fr"?"Vidéo de démonstration sans son":"Silent demo video");
+}
 function setPreset(p){
   preset=p; bookState=0;
   $("#p-salon").classList.toggle("on",p==="salon"); $("#p-auto").classList.toggle("on",p==="auto");
   $("#c-av").textContent=P[p].av; $("#c-name").textContent=P[p].name;
-  $("#msgs").innerHTML=""; addM("b",P[p].hi[lang]); renderChips();
+  $("#msgs").innerHTML=""; addM("b",P[p].hi[lang]); renderChips(); renderDemoVideo();
 }
 function renderChatStatic(){
   $("#c-sub").textContent = lang==="fr" ? "Assistant · répond instantanément" : "Assistant · replies instantly";
-  $("#msgs").innerHTML=""; bookState=0; addM("b",P[preset].hi[lang]); renderChips();
+  $("#msgs").innerHTML=""; bookState=0; addM("b",P[preset].hi[lang]); renderChips(); renderDemoVideo();
 }
 function renderChips(){
   $("#chips").innerHTML = P[preset].chips.map(function(c,i){return '<button class="chip" onclick="ask('+i+')">'+c[lang]+'</button>'}).join("");
