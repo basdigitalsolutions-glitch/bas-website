@@ -298,7 +298,7 @@ details[open] p{animation:fadeUp .4s both}
 <section id="live-demo"><div class="wrap">
   <h2 data-en="See it work in one minute" data-fr="Voyez-le en action en une minute">See it work in one minute</h2>
   <div class="demo-video" id="demo-video">
-    <video id="dv" controls playsinline preload="none" poster="/media/demo-salon-lumiere.jpg" data-label-en="Silent demo video" data-label-fr="Vidéo de démonstration sans son" aria-label="Silent demo video" style="width:100%;height:auto;border-radius:16px;background:#0f2420"><source id="dv-src" src="/media/demo-salon-lumiere.mp4" type="video/mp4"></video>
+    <video id="dv" controls playsinline preload="none" poster="/media/demo-salon-lumiere.jpg" aria-label="Demo video with computer-generated voice" style="width:100%;height:auto;border-radius:16px;background:#0f2420"><source id="dv-src" src="/media/demo-salon-lumiere-en.mp4" type="video/mp4"></video>
     <p class="note" id="dv-note"></p>
   </div>
   <div class="presets">
@@ -460,17 +460,19 @@ var P = {
    {k:["hour","open","heure","ouvert","horaire","saturday","samedi"],en:"Mon–Fri 8am–5pm, Sat 8am–1pm. Closed Sunday.",fr:"Du lundi au vendredi de 8 h à 17 h, le samedi de 8 h à 13 h. Fermé le dimanche."}]}
 };
 var preset="salon", bookState=0, book={};
-var DV={salon:{src:"/media/demo-salon-lumiere.mp4",poster:"/media/demo-salon-lumiere.jpg",
- en:"Silent demo with a fictional salon: at 11:42 PM a customer asks what a balayage costs, and the assistant answers in French, then English.",
- fr:"Démo sans son avec un salon fictif : à 23 h 42, une cliente demande le prix d’un balayage et l’assistant répond en français, puis en anglais."},
- auto:{src:"/media/demo-garage-pro-pneu.mp4",poster:"/media/demo-garage-pro-pneu.jpg",
- en:"Silent demo with a fictional garage: at 8:47 PM a customer asks about winter tires, and the assistant answers in French, then English.",
- fr:"Démo sans son avec un garage fictif : à 20 h 47, un client demande le prix des pneus d’hiver et l’assistant répond en français, puis en anglais."}};
+var DV={salon:{poster:"/media/demo-salon-lumiere.jpg",
+ src:{en:"/media/demo-salon-lumiere-en.mp4",fr:"/media/demo-salon-lumiere-fr.mp4"},
+ en:"Demo with a fictional salon and a computer-generated voice: at 11:42 PM a customer asks what a balayage costs, and the assistant answers in French, then English.",
+ fr:"Démo avec un salon fictif et une voix de synthèse : à 23 h 42, une cliente demande le prix d’un balayage et l’assistant répond en français, puis en anglais."},
+ auto:{poster:"/media/demo-garage-pro-pneu.jpg",
+ src:{en:"/media/demo-garage-pro-pneu-en.mp4",fr:"/media/demo-garage-pro-pneu-fr.mp4"},
+ en:"Demo with a fictional garage and a computer-generated voice: at 8:47 PM a customer asks about winter tires, and the assistant answers in French, then English.",
+ fr:"Démo avec un garage fictif et une voix de synthèse : à 20 h 47, un client demande le prix des pneus d’hiver et l’assistant répond en français, puis en anglais."}};
 function renderDemoVideo(){
-  var d=DV[preset], v=$("#dv"), s=$("#dv-src");
-  if(s.getAttribute("src")!==d.src){v.pause(); s.setAttribute("src",d.src); v.setAttribute("poster",d.poster); v.load();}
+  var d=DV[preset], v=$("#dv"), s=$("#dv-src"), u=d.src[lang];
+  if(s.getAttribute("src")!==u){v.pause(); s.setAttribute("src",u); v.setAttribute("poster",d.poster); v.load();}
   $("#dv-note").textContent=d[lang];
-  v.setAttribute("aria-label", lang==="fr"?"Vidéo de démonstration sans son":"Silent demo video");
+  v.setAttribute("aria-label", lang==="fr"?"Vidéo de démonstration avec voix de synthèse":"Demo video with computer-generated voice");
 }
 function setPreset(p){
   preset=p; bookState=0;
