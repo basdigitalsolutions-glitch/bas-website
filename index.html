@@ -390,9 +390,10 @@ details[open] p{animation:fadeUp .4s both}
 </div>
 <script>
 function obSet(k){
-  var fr=document.documentElement.lang==="fr", el=document.getElementById("ob-st");
-  var m={ok:[fr?"Approuvé · cliente avisée":"Approved · client notified"],alt:[fr?"Autre heure proposée":"Other time suggested"],no:[fr?"Refusé · cliente avisée":"Declined · client notified"]};
-  el.textContent=m[k][0];
+  var m={ok:["Approved · client notified","Approuvé · cliente avisée"],alt:["Other time suggested","Autre heure proposée"],no:["Declined · client notified","Refusé · cliente avisée"]}[k];
+  var el=document.getElementById("ob-st");
+  el.setAttribute("data-en",m[0]); el.setAttribute("data-fr",m[1]);
+  el.textContent = document.documentElement.lang==="fr" ? m[1] : m[0];
   el.style.background = k==="ok" ? "var(--emerald-bg)" : "#fff7ed";
   el.style.color = k==="ok" ? "var(--emerald)" : "var(--copper)";
 }
