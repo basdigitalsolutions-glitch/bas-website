@@ -41,5 +41,6 @@
 .bx-law{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.16);font-size:13.5px}
 @media(min-width:860px){.bx-fg{grid-template-columns:1.3fr 1fr 1fr 1fr}}
 .bx-header li,.bx-footer li,.bx-footer ul{margin:0;padding:0}
+.bx-header li::before,.bx-header li::after,.bx-footer li::before,.bx-footer li::after,.bx-footer ul::before,.bx-footer ul::after{content:none!important;display:none!important}
 @media print{.bx-header,.bx-footer{display:none}}
 @media(prefers-reduced-motion:reduce){.bx-header *{transition:none!important}}
