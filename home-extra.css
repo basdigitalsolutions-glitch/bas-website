@@ -72,3 +72,5 @@
 .rf{background:var(--bg);border-radius:16px;padding:20px;text-align:left}
 .rf .price2{font-size:24px;font-weight:800;color:var(--indigo);margin:4px 0 6px}
 .rf p{color:var(--slate);font-size:15px}
+@media(min-width:760px){.lineup.lineup-4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.lineup.lineup-4{grid-template-columns:repeat(4,1fr)}}
