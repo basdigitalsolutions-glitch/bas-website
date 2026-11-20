@@ -1,0 +1,43 @@
+/* BAS shared shell: header + footer. Namespaced (.bx-) so legacy page CSS cannot clash. */
+.bx-header,.bx-footer{font-family:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.5;text-align:left}
+.bx-header *,.bx-footer *{box-sizing:border-box}
+.bx-skip{position:absolute;left:12px;top:-64px;background:#26292a;color:#fff;padding:10px 14px;border-radius:8px;z-index:200;text-decoration:none}
+.bx-skip:focus{top:12px}
+.bx-header{position:sticky;top:0;z-index:100;background:rgba(250,246,238,.97);backdrop-filter:blur(8px);border-bottom:1px solid #e5ddcc;color:#26292a}
+.bx-in{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:10px;min-height:66px}
+.bx-brand{display:flex;align-items:center;min-height:44px;flex:0 0 auto}.bx-brand img{height:34px;width:auto;display:block}
+.bx-sp{flex:1}
+.bx-links{display:none;gap:2px;align-items:center}
+.bx-links a,.bx-mlinks a{display:inline-block;text-decoration:none;color:#4a504c;font-weight:600;font-size:15px;padding:12px 10px;min-height:44px;white-space:nowrap;border-radius:8px}
+.bx-links a:hover,.bx-mlinks a:hover{color:#365040;background:#e6ede4}
+.bx-links a[aria-current=page],.bx-mlinks a[aria-current=page]{color:#365040;background:#e6ede4}
+.bx-lang{display:flex;border:1.5px solid #e5ddcc;border-radius:10px;overflow:hidden;font-size:13px;font-weight:700;flex:0 0 auto}
+.bx-lang a,.bx-lang span{display:block;padding:11px 12px;min-width:44px;min-height:44px;text-align:center;text-decoration:none}
+.bx-lang span{background:#26292a;color:#fff}.bx-lang a{background:#fffdf8;color:#4a504c}
+.bx-cta{display:none;align-items:center;justify-content:center;min-height:44px;padding:8px 18px;border-radius:999px;background:#46614d;color:#fff;font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap}
+.bx-cta:hover{background:#365040}
+.bx-menu{flex:0 0 auto;position:relative}
+.bx-menu summary{list-style:none;cursor:pointer;min-height:44px;min-width:44px;padding:11px 12px;border:1.5px solid #e5ddcc;border-radius:10px;background:#fffdf8;font-weight:700;font-size:14px;color:#26292a;display:block;text-align:center}
+.bx-menu summary::-webkit-details-marker{display:none}.bx-menu summary::after{content:none}
+.bx-mlinks{position:absolute;right:0;top:52px;width:min(300px,calc(100vw - 40px));background:#fffdf8;border:1px solid #e5ddcc;border-radius:14px;box-shadow:0 18px 40px rgba(38,41,42,.16);padding:8px;display:grid}
+.bx-mlinks a{white-space:normal}
+.bx-mlinks .bx-mcta{background:#46614d;color:#fff;text-align:center;margin-top:6px;border-radius:999px}
+@media(min-width:1120px){.bx-links{display:flex}.bx-menu{display:none}.bx-cta{display:inline-flex}}
+.bx-header :focus-visible,.bx-footer :focus-visible{outline:3px solid #9a5a2e;outline-offset:2px;border-radius:6px}
+.bx-footer{background:#26292a;color:#d7d1c4;padding:44px 0 36px;font-size:15px}
+.bx-footer a{color:#f1d6b8}
+.bx-fin{max-width:1200px;margin:0 auto;padding:0 20px}
+.bx-footer nav,.bx-footer div,.bx-footer ul,.bx-footer li{display:block;float:none;position:static;width:auto;max-width:none;margin-left:0;margin-right:0}
+.bx-footer .bx-fg{display:grid;gap:26px}
+.bx-footer ul.bx-fl{display:flex}.bx-footer ul.bx-fl li{display:block}
+.bx-footer .bx-h{display:block}
+.bx-footer .bx-fin{max-width:1200px;margin:0 auto}
+.bx-footer img{height:34px;width:auto;background:#fff;border-radius:8px;padding:4px 8px;display:block}
+.bx-footer h2,.bx-footer .bx-h{font-family:"Bricolage Grotesque","Hanken Grotesk",system-ui,sans-serif;font-size:16px;color:#fff;margin:0 0 8px;font-weight:700;letter-spacing:0}
+.bx-footer ul{list-style:none;margin:0;padding:0}
+.bx-footer li a{display:inline-block;padding:7px 0;min-height:36px;text-decoration:none}.bx-footer li a:hover{text-decoration:underline}
+.bx-footer p{margin:10px 0 0;color:#d7d1c4}
+.bx-fl{display:flex;flex-wrap:wrap;gap:0 18px;margin-top:6px}
+.bx-law{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.16);font-size:13.5px}
+@media(min-width:860px){.bx-fg{grid-template-columns:1.3fr 1fr 1fr 1fr}}
+@media(prefers-reduced-motion:reduce){.bx-header *{transition:none!important}}
