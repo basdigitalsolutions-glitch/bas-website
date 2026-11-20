@@ -211,7 +211,7 @@ a.tile{text-decoration:none;color:inherit}
 .statline{font-size:14px;color:var(--muted);margin-top:12px}
 .proc{display:grid;gap:14px;margin-top:34px;list-style:none;counter-reset:p}
 .proc li{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;display:flex;gap:16px;align-items:flex-start;counter-increment:p}
-.proc li::before{content:counter(p);flex:0 0 40px;height:40px;border-radius:50%;background:var(--sage);color:#fff;display:grid;place-items:center;font-weight:700;font-family:var(--serif);font-size:18px}
-.proc h3{font-size:19px}.proc p{color:var(--muted);margin-top:3px;font-size:15.5px}
+.proc li::before{content:counter(p);flex:0 0 40px;width:40px;min-width:40px;height:40px;border-radius:50%;background:var(--sage);color:#fff;display:grid;place-items:center;font-weight:700;font-family:var(--serif);font-size:18px}
+.proc li>div{min-width:0}.proc h3{font-size:19px}.proc p{color:var(--muted);margin-top:3px;font-size:15.5px}
 @media(min-width:900px){.proc.h3col{grid-template-columns:repeat(3,1fr)}.proc.h3col li{flex-direction:column}}
 .minor{font-size:14px;color:var(--muted)}
