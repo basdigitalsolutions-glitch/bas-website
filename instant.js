@@ -37,12 +37,20 @@
     }
   };
 
-  // Show the section only if the server says the feature is on.
-  var ctl = new AbortController();
-  var t0 = setTimeout(function () { ctl.abort(); }, 8000);
-  fetch(API + "/health", { signal: ctl.signal }).then(function (r) { return r.json(); })
-    .then(function (h) { if (h && h.instant === true) sec.hidden = false; })
-    .catch(function () {}).then(function () { clearTimeout(t0); });
+  // Show the section only if the server says the feature is on. The free hosting plan sleeps when idle and can take
+  // up to a minute to wake, so ask as soon as the page opens (which wakes it) and keep asking for about 90 seconds.
+  var started = Date.now();
+  function check() {
+    var ctl = new AbortController(), t0 = setTimeout(function () { ctl.abort(); }, 12000);
+    fetch(API + "/health", { signal: ctl.signal }).then(function (r) { return r.json(); })
+      .then(function (h) {
+        if (h && h.instant === true) { sec.hidden = false; return; }
+        if (!h || h.ok !== true) throw new Error("not ready"); // server answered but is not ready: keep trying
+      })
+      .catch(function () { if (Date.now() - started < 90000) setTimeout(check, 3000); })
+      .then(function () { clearTimeout(t0); });
+  }
+  check();
 
   var form = document.getElementById("try-form"), input = document.getElementById("try-url"),
       btn = document.getElementById("try-btn"), out = document.getElementById("try-out");
