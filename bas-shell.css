@@ -44,3 +44,20 @@
 .bx-header li::before,.bx-header li::after,.bx-footer li::before,.bx-footer li::after,.bx-footer ul::before,.bx-footer ul::after{content:none!important;display:none!important}
 @media print{.bx-header,.bx-footer{display:none}}
 @media(prefers-reduced-motion:reduce){.bx-header *{transition:none!important}}
+
+/* 2026-11 conversion updates: SMS preview CTA, Founding Partner card, footer industrial link */
+.bx-sms{margin:14px 0 0;padding:12px 14px;background:#fffdf8;border:1px solid #e5ddcc;border-radius:12px;font-size:15px;line-height:1.45;color:#26292a;max-width:560px}
+.bx-sms a{color:#365040;font-weight:700;white-space:nowrap}
+.bx-sms-band{padding:28px 20px;background:#faf6ee;border-top:1px solid #e5ddcc}
+.bx-sms-band .bx-sms{margin:0 auto;text-align:center;max-width:640px}
+.bx-fp-sec{padding:28px 20px}
+.bx-fp{max-width:1000px;margin:0 auto;background:#e6ede4;border:1px solid #8fa893;border-radius:16px;padding:22px 24px;color:#26292a}
+.bx-fp-tag{display:inline-block;background:#f6e9dc;color:#7a4421;border:1px solid #e8cfb6;font-weight:700;font-size:12.5px;border-radius:999px;padding:3px 10px}
+.bx-fp h2{margin:10px 0 0;font-size:clamp(22px,3.4vw,28px);line-height:1.2}
+.bx-fp ul{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.bx-fp li{background:#fffdf8;border:1px solid #c5d3c7;border-radius:999px;padding:6px 12px;font-weight:700;font-size:14.5px;color:#365040}
+.bx-fp p{margin:12px 0 0}
+.bx-ind{margin:22px 0 0;font-size:13.5px}
+.bx-ind a{color:#b9b3a4;text-decoration:underline}
+.bx-ind a:hover,.bx-ind a:focus{color:#fff}
+.bx-fp .bx-fp-fine{font-size:14px;color:#4a4f4c}
