@@ -91,3 +91,17 @@
 .order>.btn,.order .os>.btn{width:100%}
 .order .btn-o{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:999px;border:1.5px solid #365040;background:#fff;color:#365040;font:inherit;font-weight:700;cursor:pointer}
 .order .orow{align-items:stretch}.order .orow .btn-o{flex:0 0 32%;border-radius:24px}.order .orow .btn-p{flex:1;border-radius:24px;padding:12px 14px;line-height:1.2}
+
+.order .osec{margin:16px 0 4px;font-size:16px;color:#7a4421}
+.order .ocart{margin-top:18px;padding-top:6px;border-top:2px dashed #cfc6b2}
+.order .orev li.empty{color:#5a605c;border:0}
+.order .hours{margin-top:14px}
+
+.staff .oact{margin-top:14px;padding-top:10px;border-top:2px dashed #cfc6b2}
+.staff .oact .ol{display:block;margin:6px 0 4px;font-weight:600;font-size:15px}
+.staff .oact .oin{width:100%;box-sizing:border-box;min-height:46px;padding:10px 12px;border:1.5px solid #cfc6b2;border-radius:12px;font:inherit;font-size:16px;background:#fff}
+.staff .oact .orow{display:flex;gap:10px;margin-top:12px}
+.staff .oact .orow .btn{flex:1;min-height:48px;border-radius:24px;padding:10px 12px;line-height:1.2;font-weight:700;cursor:pointer}
+.staff .oact .btn-o{background:#fff;border:1.5px solid #365040;color:#365040}
+.staff .oact .ocust{margin-top:12px;background:#eef3ec;border:1px solid #cddbc9;border-radius:12px;padding:10px 12px;font-size:15px}
+.staff .oact [hidden]{display:none!important}
