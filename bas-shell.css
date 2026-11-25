@@ -61,3 +61,33 @@
 .bx-ind a{color:#b9b3a4;text-decoration:underline}
 .bx-ind a:hover,.bx-ind a:focus{color:#fff}
 .bx-fp .bx-fp-fine{font-size:14px;color:#4a4f4c}
+/* restaurant demo: quantity stepper */
+.order .oi{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.order .oi li{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid #e5ddcc}
+.order .op{color:#5a605c;font-size:15px}
+.order .oq{display:inline-flex;align-items:center;gap:6px}
+.order .ob{width:44px;height:44px;border-radius:999px;border:1.5px solid #46614d;background:#fff;color:#365040;font:inherit;font-size:22px;font-weight:700;line-height:1;cursor:pointer;touch-action:manipulation}
+.order .ob:active{background:#e6ede4}
+.order .ov{min-width:28px;text-align:center;font-weight:700;font-size:17px}
+.order .ot{margin:12px 0 10px;font-size:16px}
+
+.order .ost{list-style:none;display:flex;gap:6px;margin:10px 0 4px;padding:0;font-size:13px;font-weight:700;color:#5a605c}
+.order .ost li{flex:1;text-align:center;padding:6px 4px;border-radius:999px;background:#efe9db}
+.order .ost li.cur{background:#365040;color:#fff}
+.order .ost li.done{background:#d9e4d6;color:#365040}
+.order .ol{display:block;margin:12px 0 4px;font-weight:600;font-size:15px}
+.order .oin{width:100%;box-sizing:border-box;min-height:46px;padding:10px 12px;border:1.5px solid #cfc6b2;border-radius:12px;font:inherit;font-size:16px;background:#fff}
+.order .orow{display:flex;gap:10px;margin-top:12px}
+.order .orow .btn{flex:1}
+.order .orev{list-style:none;margin:10px 0 0;padding:0}
+.order .orev li{display:flex;gap:6px;padding:7px 0;border-bottom:1px solid #e5ddcc;font-size:15px}
+.order .orev .rn{flex:1}
+.order .otl{margin-top:8px;font-size:15px}
+.order .otl div{display:flex;justify-content:space-between;padding:3px 0}
+.order .otl .gt{border-top:2px solid #365040;margin-top:4px;padding-top:7px;font-size:17px}
+.order .ok{color:#365040;font-size:18px;margin:12px 0 4px}
+.order .muted{color:#5a605c;font-size:14px}
+.order [hidden]{display:none!important}
+.order>.btn,.order .os>.btn{width:100%}
+.order .btn-o{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:999px;border:1.5px solid #365040;background:#fff;color:#365040;font:inherit;font-weight:700;cursor:pointer}
+.order .orow{align-items:stretch}.order .orow .btn-o{flex:0 0 32%;border-radius:24px}.order .orow .btn-p{flex:1;border-radius:24px;padding:12px 14px;line-height:1.2}
