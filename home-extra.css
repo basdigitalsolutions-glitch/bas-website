@@ -6,7 +6,7 @@
 .path{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:10px;text-align:left}
 .path-a{border-color:var(--indigo);box-shadow:0 8px 24px rgba(14,107,93,.10)}
 .path .tag{align-self:flex-start;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--indigo);background:var(--emerald-bg);padding:4px 10px;border-radius:999px}
-.path-b .tag{color:var(--copper);background:#fdf7f2}
+.path-b .tag{color:var(--copper);background:#FEF3C7}
 .path h3{font-size:21px;line-height:1.25}
 .path p{color:var(--slate);font-size:15px}
 .path .offer{font-weight:700;color:var(--navy)}
@@ -60,7 +60,7 @@
 
 .plans.tiers{max-width:1080px;grid-template-columns:1fr}
 @media(min-width:900px){.plans.tiers{grid-template-columns:repeat(3,1fr)}}
-.plan .pill.alt{background:#fdf7f2;color:var(--copper)}
+.plan .pill.alt{background:#FEF3C7;color:var(--copper)}
 .plan .due{min-height:0}
 .annual{text-align:center;color:var(--slate);font-size:14px;margin-top:18px}
 .trustline{max-width:700px;margin:10px auto 0;text-align:center;font-weight:600;font-size:15px;color:var(--navy)}
