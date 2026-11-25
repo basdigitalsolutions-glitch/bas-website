@@ -91,3 +91,8 @@
 .order>.btn,.order .os>.btn{width:100%}
 .order .btn-o{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:999px;border:1.5px solid #365040;background:#fff;color:#365040;font:inherit;font-weight:700;cursor:pointer}
 .order .orow{align-items:stretch}.order .orow .btn-o{flex:0 0 32%;border-radius:24px}.order .orow .btn-p{flex:1;border-radius:24px;padding:12px 14px;line-height:1.2}
+
+.order .osec{margin:16px 0 4px;font-size:16px;color:#7a4421}
+.order .ocart{margin-top:18px;padding-top:6px;border-top:2px dashed #cfc6b2}
+.order .orev li.empty{color:#5a605c;border:0}
+.order .hours{margin-top:14px}
